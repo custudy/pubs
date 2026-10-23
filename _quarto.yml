@@ -11,10 +11,11 @@ execute:
 website:
   navbar:
     logo: cus_logo_v.png
+    logo-href: https://www.custudy.org 
     search: false
-    left:
-      - href: https://www.custudy.org
-        text: Home
+#    left:
+#      - href: https://www.custudy.org
+#        text: Home
     right: 
       - href: index.qmd
         text: Publications
@@ -32,4 +33,6 @@ website:
 format:
   html:
     theme: spacelab
+    date-format: iso
     title-block-banner: true
+    toc: true
