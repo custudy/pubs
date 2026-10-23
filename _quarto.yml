@@ -36,4 +36,3 @@ format:
   html:
     theme: spacelab
     date-format: iso
-    title-block-banner: true
