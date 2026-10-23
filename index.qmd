@@ -3,5 +3,5 @@ title: "Publications"
 toc: false
 ---
 
-## Publications
+![](work_in_progress.GIF){height="1in" fig-align="left"}
 
