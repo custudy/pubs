@@ -10,9 +10,14 @@ execute:
 
 website:
   navbar:
-    right:
+    logo: cus_logo_v.png
+    search: false
+    left:
       - href: https://www.custudy.org
         text: Home
+    right: 
+      - href: index.qmd
+        text: Publications
   page-footer:
     left: |
       © 2026 Construction Urban Study
