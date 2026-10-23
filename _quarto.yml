@@ -1,0 +1,30 @@
+project:
+  title: "CUStudy"
+  type: website
+  resources: 
+    - CNAME
+    - "*.(png|jpg|jpeg|svg)"
+
+execute:
+  freeze: auto
+
+website:
+  navbar:
+    right:
+      - href: https://www.custudy.org
+        text: Home
+  page-footer:
+    left: |
+      © 2026 Construction Urban Study
+    center: |
+      [![](cus_logo_h.png){height=25px}](/)
+    right: |
+      [contact@custudy.org](mailto:contact@custudy.org)
+
+    background: light
+    foreground: dark
+
+format:
+  html:
+    theme: spacelab
+    title-block-banner: true
