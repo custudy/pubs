@@ -3,5 +3,5 @@ title: "Publications"
 toc: false
 ---
 
-## Publication page
+## Publications
 

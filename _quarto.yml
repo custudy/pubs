@@ -5,20 +5,22 @@ project:
     - CNAME
     - "*.(png|jpg|jpeg|svg)"
 
-execute:
+execute: 
   freeze: auto
 
 website:
+  draft-mode: visible
   navbar:
     logo: cus_logo_v.png
-    logo-href: https://www.custudy.org 
+    logo-href: https://www.custudy.org
     search: false
-#    left:
-#      - href: https://www.custudy.org
-#        text: Home
-    right: 
-      - href: index.qmd
-        text: Publications
+    right:
+      - href: https://news.custudy.org
+        text: "News Letters"
+      - href: https://pubs.custudy.org 
+        text: "Publications"
+      - href: https://data.custudy.org
+        text: "Data Repository"
   page-footer:
     left: |
       © 2026 Construction Urban Study
