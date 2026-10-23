@@ -1,6 +1,7 @@
 ---
-title: Publications
+title: "Publications"
+toc: false
 ---
 
-Publication page
+## Publication page
 
