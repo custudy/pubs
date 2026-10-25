@@ -4,14 +4,12 @@ title: "Publications"
 listing: 
 
   - id: briefing
-    contents:
-      - briefing
+    contents: briefing
     sort: "date desc"
     type: table
 
   - id: report
-    contents:
-      - report
+    contents: report
     sort: "date desc"
     type: table
 
