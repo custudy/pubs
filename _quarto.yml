@@ -36,3 +36,6 @@ format:
   html:
     theme: spacelab
     date-format: iso
+
+lang: ko
+language: korean.yml
