@@ -4,7 +4,8 @@ title: "Publications"
 listing: 
 
   - id: briefing
-    contents: briefing
+    contents:
+      - "briefing/**/*.qmd"
     sort: "date desc"
     type: table
 
