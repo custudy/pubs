@@ -1,0 +1,94 @@
+---
+title: "2025년 4분기 건설공사 계약금액"
+author: "wintree"
+date: "2026-04-17"
+date-modified: "2026-04-17"
+categories: [건설공사, 계약금액]
+toc: true
+draft: true
+---
+
+지역별, 시도별 건설공사 계약금액 분석
+
+```{r}
+#| echo: false
+#| output: false
+library(tidyverse)
+contract <- read_csv("../FILES/현장소재지별_건설공사계약금액.csv") |>
+  mutate(구분 = as.factor(구분), 시도별 = as.factor(시도별))
+contract$구분 <- fct_relevel(contract$구분, "전국", "수도권", "지방")
+contract$시도별 <-
+  fct_relevel(contract$시도별, "전국", "서울", "부산", "대구", "인천", "광주", "대전",
+              "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주")
+met <- contract |>
+  group_by(`분기`, `구분`) |>
+  summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+ccd <-
+  contract |>
+  group_by(`분기`, `시도별`) |>
+  summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+```
+
+#### 2025/04 분기 현장 소재지별 건설공사 계약금액(억원)
+
+\
+
+##### 지역별 증감
+
+```{r}
+#| echo: false
+#| output: false
+met3q <- met |>
+  filter(`분기` == "2024/03" | `분기` == "2025/02" | `분기` == "2025/03") |>
+  pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |>
+  mutate(YoY = sprintf("%.2f%%", 100 * (`2025/03` - `2024/03`) / `2024/03`),
+         QoQ = sprintf("%.2f%%", 100 * (`2025/03` - `2025/02`) / `2025/02`))
+met4q <- met |>
+  filter(`분기` == "2024/04" | `분기` == "2025/03" | `분기` == "2025/04") |>
+  pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |>
+  mutate(YoY = sprintf("%.2f%%", 100 * (`2025/04` - `2024/04`) / `2024/04`),
+         QoQ = sprintf("%.2f%%", 100 * (`2025/04` - `2025/03`) / `2025/03`))
+```
+
+```{r}
+#| echo: false
+#| tab.cap: 2025/04 분기 지역별 전년동기, 전기대비 건설공사 계약금액(억원)
+knitr::kable(met4q, align = "lrrrrr", format.args = list(big.mark = ","))
+```
+
+```{r}
+#| echo: false
+#| tab.cap: 2025/03 분기 지역별 전년동기, 전기대비 건설공사 계약금액(억원)
+knitr::kable(met3q, align = "lrrrrr", format.args = list(big.mark = ","))
+```
+
+\
+
+##### 시도별 증감
+
+```{r}
+#| echo: false
+#| output: false
+ccd3q <- ccd |>
+  filter(`분기` == "2024/03" | `분기` == "2025/02" | `분기` == "2025/03") |>
+  pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |>
+  mutate(YoY = sprintf("%.2f%%", 100 * (`2025/03` - `2024/03`) / `2024/03`),
+         QoQ = sprintf("%.2f%%", 100 * (`2025/03` - `2025/02`) / `2025/02`))
+ccd4q <- ccd |>
+  filter(`분기` == "2024/04" | `분기` == "2025/03" | `분기` == "2025/04") |>
+  pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |>
+  mutate(YoY = sprintf("%.2f%%", 100 * (`2025/04` - `2024/04`) / `2024/04`),
+         QoQ = sprintf("%.2f%%", 100 * (`2025/04` - `2025/03`) / `2025/03`))
+```
+
+```{r}
+#| echo: false
+#| tab.cap: 2025/04 분기 시도별 전년동기, 전기대비 건설공사 계약금액(억원)
+knitr::kable(ccd4q, align = "lrrrrr", format.args = list(big.mark = ","))
+```
+
+```{r}
+#| echo: false
+#| tab.cap: 2025/03 분기 시도별 전년동기, 전기대비 건설공사 계약금액(억원)
+knitr::kable(ccd3q, align = "lrrrrr", format.args = list(big.mark = ","))
+```
