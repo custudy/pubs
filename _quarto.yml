@@ -19,8 +19,13 @@ website:
         text: "News Letters"
       - href: https://pubs.custudy.org 
         text: "Publications"
-      - href: https://data.custudy.org
-        text: "Data Repository"
+      - text: "Data"
+        menu: 
+        - href: https://data.custudy.org
+          text: "CUS Repository"
+        - href: https://data.custudy.org/resources.html
+          text: "Public Sources"
+
   page-footer:
     left: |
       © 2023, 2026 Construction Urban Study
