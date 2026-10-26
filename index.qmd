@@ -18,14 +18,17 @@ resources:
     - "FILES/**"
 ---
 
+## 브리핑 및 보고서
+
 ![](work_in_progress.GIF){height="1in" fig-align="left"}
+
+## 브리핑
+
+:::{#briefing}
+:::
 
 ## 보고서
 
 :::{#report}
 :::
 
-## 브리핑
-
-:::{#briefing}
-:::
