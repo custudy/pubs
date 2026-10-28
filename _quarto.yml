@@ -14,17 +14,17 @@ website:
     logo: cus_logo_v.png
     logo-href: https://www.custudy.org
     search: false
-    right:
-      - href: https://news.custudy.org
-        text: "News Letters"
-      - href: https://pubs.custudy.org 
-        text: "Publications"
-      - text: "Data"
-        menu: 
-        - href: https://data.custudy.org
-          text: "CUS Repository"
-        - href: https://data.custudy.org/resources.html
-          text: "Public Sources"
+#    right:
+#      - href: https://news.custudy.org
+#        text: "News Letters"
+#      - href: https://pubs.custudy.org 
+#        text: "Publications"
+#      - text: "Data"
+#        menu: 
+#        - href: https://data.custudy.org
+#          text: "CUS Repository"
+#        - href: https://data.custudy.org/resources.html
+#          text: "Public Sources"
 
   page-footer:
     left: |
