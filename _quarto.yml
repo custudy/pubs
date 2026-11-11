@@ -1,5 +1,5 @@
 project:
-  title: "건설도시연구"
+#  title: "건설도시연구"
   type: website
   resources: 
     - CNAME
@@ -11,7 +11,7 @@ execute:
 website:
   draft-mode: visible
   navbar:
-    logo: cus_logo_v.png
+    logo: title_b.png
     logo-href: https://www.custudy.org
     search: false
 #    right:
@@ -30,7 +30,7 @@ website:
     left: |
       © 2023, 2026 Construction Urban Study
     center: |
-      [![](/cus_logo_h.png){height=25px}](https://www.custudy.org)
+      [![](/title_g.png){height=20px}](https://www.custudy.org)
     right: |
       [contact@custudy.org](mailto:contact@custudy.org)
 
@@ -41,6 +41,8 @@ format:
   html:
     theme: spacelab
     date-format: iso
+
+title-block-banner: true
 
 lang: ko
 language: korean.yml
