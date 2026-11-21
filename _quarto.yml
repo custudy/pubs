@@ -11,26 +11,38 @@ execute:
 website:
   draft-mode: visible
   navbar:
-    logo: logo_b.png
+    logo: cus_title.png
     logo-href: https://www.custudy.org
     search: false
+    left: 
+      - index.qmd
 #    right:
 #      - href: https://news.custudy.org
 #        text: "News Letters"
 #      - href: https://pubs.custudy.org 
 #        text: "Publications"
 #      - text: "Data"
-#        menu: 
-#        - href: https://data.custudy.org
-#          text: "CUS Repository"
-#        - href: https://data.custudy.org/resources.html
-#          text: "Public Sources"
+    right:
+      - href: briefing.qmd
+      - href: report.qmd
+
+  sidebar: 
+    - id: home
+      style: docked
+      collapse-level: 2
+      contents:
+        - href: briefing.qmd
+        - href: report.qmd
+    - id: brief
+      contents: briefing
+    - id: report
+      contents: report
 
   page-footer:
     left: |
       © 2023, 2026 Construction Urban Study
     center: |
-      [![](/title_g.png){height=20px}](https://www.custudy.org)
+      [![](/cus_title_ko.png){height=20px}](https://www.custudy.org)
     right: |
       [contact@custudy.org](mailto:contact@custudy.org)
 
@@ -39,8 +51,8 @@ website:
 
 format:
   html:
-    theme: spacelab
-    date-format: iso
+    theme: Spacelab
+    date-format: "YYYY년 MM월 DD일"
 
 title-block-banner: true
 

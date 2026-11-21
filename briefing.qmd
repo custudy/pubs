@@ -1,0 +1,20 @@
+---
+title: "Briefing"
+
+listing: 
+    type: table
+    contents: briefing
+    fields: 
+      - "title"
+      - "description"
+      - "date"
+    sort: 
+      - "date desc"
+    categories: true
+
+sidebar: brief
+---
+
+![](work_in_progress.GIF){height="1in" fig-align="left"}
+
+## 건설도시연구 브리핑

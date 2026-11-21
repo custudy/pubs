@@ -1,34 +1,16 @@
 ---
 title: "Publications"
 
-#listing: 
-
-#  - id: briefing
-#    contents: briefing
-#    sort: "date desc"
-#    type: table
-
-#  - id: report
-#    contents: report
-#    sort: "date desc"
-#    type: table
-
-toc: false
-resources: 
-    - "FILES/**"
+sidebar: home
 ---
-
-## 브리핑 및 보고서
 
 ![](work_in_progress.GIF){height="1in" fig-align="left"}
 
-## 브리핑
 
-:::{#briefing}
+::: {.callout-note}
+
+## 건설도시연구 간행물
+
+  브리핑, 보고서 등 간행믈 관리를 위한 건설도시연구 홈페이지의 서브 프로젝트
+
 :::
-
-## 보고서
-
-:::{#report}
-:::
-
