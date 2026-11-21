@@ -1,23 +1,45 @@
 [
   {
+    "objectID": "report/dummy.html",
+    "href": "report/dummy.html",
+    "title": "dummy",
+    "section": "",
+    "text": "dummy file for testing",
+    "crumbs": [
+      "Report",
+      "dummy"
+    ]
+  },
+  {
+    "objectID": "briefing.html#건설도시연구-브리핑",
+    "href": "briefing.html#건설도시연구-브리핑",
+    "title": "Briefing",
+    "section": "건설도시연구 브리핑",
+    "text": "건설도시연구 브리핑"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "노트건설도시연구 간행물\n\n\n\n브리핑, 보고서 등 간행믈 관리를 위한 건설도시연구 홈페이지의 서브 프로젝트"
+  },
+  {
     "objectID": "briefing/2026-04-17_2025년-4분기-건설공사계약금액.html",
     "href": "briefing/2026-04-17_2025년-4분기-건설공사계약금액.html",
     "title": "2025년 4분기 건설공사 계약금액",
     "section": "",
-    "text": "지역별, 시도별 건설공사 계약금액 분석\n\n2025/04 분기 현장 소재지별 건설공사 계약금액(억원)\n\n\n\n지역별 증감\n\n\n\n\n시도별 증감"
+    "text": "지역별, 시도별 건설공사 계약금액 분석\n\n2025/04 분기 현장 소재지별 건설공사 계약금액(억원)\n\n\n\n지역별 증감\n\n\n\n\n시도별 증감",
+    "crumbs": [
+      "Briefing",
+      "2025년 4분기 건설공사 계약금액"
+    ]
   },
   {
-    "objectID": "index.html#브리핑",
-    "href": "index.html#브리핑",
+    "objectID": "report.html#건설도시연구-간행물",
+    "href": "report.html#건설도시연구-간행물",
     "title": "Publications",
-    "section": "브리핑",
-    "text": "브리핑"
-  },
-  {
-    "objectID": "index.html#보고서",
-    "href": "index.html#보고서",
-    "title": "Publications",
-    "section": "보고서",
-    "text": "보고서"
+    "section": "건설도시연구 간행물",
+    "text": "건설도시연구 간행물"
   }
 ]

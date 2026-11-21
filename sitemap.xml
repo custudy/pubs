@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://pubs.custudy.org/report/dummy.html</loc>
+    <lastmod>2026-11-21T07:37:30.305Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pubs.custudy.org/briefing.html</loc>
+    <lastmod>2026-11-21T07:39:02.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pubs.custudy.org/index.html</loc>
+    <lastmod>2026-11-21T07:44:59.580Z</lastmod>
+  </url>
+  <url>
     <loc>https://pubs.custudy.org/briefing/2026-04-17_2025년-4분기-건설공사계약금액.html</loc>
     <lastmod>2026-10-28T06:32:44.208Z</lastmod>
   </url>
   <url>
-    <loc>https://pubs.custudy.org/index.html</loc>
-    <lastmod>2026-11-11T06:11:21.716Z</lastmod>
+    <loc>https://pubs.custudy.org/report.html</loc>
+    <lastmod>2026-11-21T07:39:18.224Z</lastmod>
   </url>
 </urlset>
