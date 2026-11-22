@@ -14,8 +14,8 @@ website:
     logo: cus_title.png
     logo-href: https://www.custudy.org
     search: false
-    left: 
-      - index.qmd
+#    left: 
+#      - index.qmd
 #    right:
 #      - href: https://news.custudy.org
 #        text: "News Letters"
@@ -28,11 +28,11 @@ website:
 
   sidebar: 
     - id: home
-      style: docked
+#      style: docked
       collapse-level: 2
-      contents:
-        - href: briefing.qmd
-        - href: report.qmd
+#      contents:
+#        - href: briefing.qmd
+#        - href: report.qmd
     - id: brief
       contents: briefing
     - id: report
@@ -46,15 +46,18 @@ website:
     right: |
       [contact@custudy.org](mailto:contact@custudy.org)
 
-    background: light
-    foreground: dark
+#    background: light
+#    foreground: dark
 
 format:
   html:
-    theme: Spacelab
+    respect-user-color-scheme: true
+    theme:
+      light: cosmo
+      dark: [cosmo, cus-dark.scss]
     date-format: "YYYY년 MM월 DD일"
 
-title-block-banner: true
+#title-block-banner: true
 
 lang: ko
 language: korean.yml
